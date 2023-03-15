@@ -1,0 +1,94 @@
+{
+  "name": "datalake-graphql-wrapper",
+  "version": "1.0.0",
+  "description": "The `DataLake GraphQL Wrapper` provides a GraphQL API for presto/trino.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbsystel/datalake-graphql-wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbsystel/datalake-graphql-wrapper/issues"
+  },
+  "homepage": "https://github.com/dbsystel",
+  "keywords": [
+    "node",
+    "typescript",
+    "presto",
+    "trino",
+    "graphql",
+    "datalake",
+    "wrapper",
+    "yoga",
+    "graphql-yoga",
+    "pothos",
+    "generator",
+    "code-generator"
+  ],
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "cli": "tsx src/codegen/cli.ts",
+    "cli:index": "tsx src/codegen/cli.ts --onlyindex true",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --config .eslintrc.lint.cjs",
+    "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix --config .eslintrc.lint.cjs",
+    "lint:types": "tsc --pretty --noEmit",
+    "lint:all": "npm run lint:fix && npm run lint:types"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Data Pioneers @ DB Systel GmbH",
+    "email": "dbsdl@deutschebahn.com",
+    "url": "https://github.com/dbsystel"
+  },
+  "maintainers": [
+    {
+      "name": "Marcus Reinhardt"
+    },
+    {
+      "name": "Stephan Moritz Becker"
+    }
+  ],
+  "dependencies": {
+    "@graphql-yoga/render-graphiql": "3.7.3",
+    "@pothos/core": "3.28.0",
+    "args": "5.0.3",
+    "chalk": "5.2.0",
+    "cross-spawn": "7.0.3",
+    "date-fns": "2.29.3",
+    "dotenv": "16.0.3",
+    "ejs": "3.1.9",
+    "globby": "13.1.3",
+    "graphql": "16.6.0",
+    "graphql-scalars": "1.20.4",
+    "graphql-yoga": "3.7.3",
+    "json-column-parser": "2.0.0",
+    "lodash-es": "4.17.21",
+    "ora": "6.1.2",
+    "presto-client": "0.12.2",
+    "replace-special-characters": "1.2.7",
+    "sql.js": "1.8.0",
+    "to-json-schema": "roopen219/to-json-schema",
+    "typeorm": "0.3.12"
+  },
+  "devDependencies": {
+    "@swc-node/register": "1.6.2",
+    "@types/args": "5.0.0",
+    "@types/cross-spawn": "6.0.2",
+    "@types/ejs": "3.1.2",
+    "@types/lodash-es": "4.17.7",
+    "@types/node": "18.15.3",
+    "@types/prompts": "2.4.3",
+    "@types/to-json-schema": "0.2.1",
+    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/parser": "5.55.0",
+    "eslint": "8.36.0",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "prettier": "2.8.4",
+    "prompts": "2.4.2",
+    "tsx": "3.12.5",
+    "typescript": "4.9.5"
+  }
+}

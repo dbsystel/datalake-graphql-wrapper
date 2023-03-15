@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "ES2020",
+    "incremental": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "./",
+    "moduleResolution": "Node",
+    "paths": {
+      "src/*": ["./src/*"]
+    },
+    "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "include": ["src/**/*", "types/*.d.ts", "types/*.ts"],
+  "exclude": [
+    "node_modules",
+    "test",
+    "dist",
+    "**/*spec.ts",
+    "src/codegen/templates/*.ejs"
+  ]
+}
