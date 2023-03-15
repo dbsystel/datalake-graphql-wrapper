@@ -145,9 +145,9 @@ reuse lint
 
 ## Credits
 
-- [https://pothos-graphql.dev]()
-- [https://the-guild.dev/graphql/yoga-server]()
-- [https://github.com/tagomoris/presto-client-node]()
+- [https://pothos-graphql.dev](https://pothos-graphql.dev)
+- [https://the-guild.dev/graphql/yoga-server](https://the-guild.dev/graphql/yoga-server)
+- [https://github.com/tagomoris/presto-client-node](https://github.com/tagomoris/presto-client-node)
 
 ## License
 
