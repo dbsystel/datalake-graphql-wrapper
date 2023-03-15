@@ -14,6 +14,9 @@ SPDX-License-Identifier: Apache-2.0
 
 The `DataLake GraphQL Wrapper` provides a GraphQL API for presto/trino.
 
+[![REUSE status](https://api.reuse.software/badge/github.com/dbsystel/datalake-graphql-wrapper)](https://api.reuse.software/info/github.com/dbsystel/datalake-graphql-wrapper)
+
+
 ## Features
 
 - Automatic endpoint generation via interactive cli
