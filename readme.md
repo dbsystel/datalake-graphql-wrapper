@@ -43,7 +43,7 @@ cp .env.example .env
 ## Run the dev server
 
 ```bash
-# Generate the index file to have all available schemas available
+# Generate the index file to have all schemas available
 npm run cli:index
 
 # Start the dev server
