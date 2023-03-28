@@ -64,7 +64,7 @@
     "graphql-yoga": "3.7.3",
     "json-column-parser": "2.0.0",
     "lodash-es": "4.17.21",
-    "ora": "6.1.2",
+    "ora": "6.3.0",
     "presto-client": "0.12.2",
     "replace-special-characters": "1.2.7",
     "sql.js": "1.8.0",
