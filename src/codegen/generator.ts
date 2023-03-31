@@ -88,7 +88,7 @@ export const prepare = async (schema: string, tableName: string) => {
   }
 }
 
-const getSchemaTableColumns = async (
+export const getSchemaTableColumns = async (
   schema: string,
   tableName: string,
 ): Promise<SchemaTableColumn[]> => {
