@@ -1,0 +1,299 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Helpers - Convert > generateJsonSchema 1`] = `
+{
+  "additionalProperties": false,
+  "properties": {
+    "bigintfield": {
+      "type": "integer",
+    },
+    "booleanfield": {
+      "type": "boolean",
+    },
+    "complexobject": {
+      "additionalProperties": false,
+      "properties": {
+        "cosub1": {
+          "type": "string",
+        },
+        "cosub2": {
+          "items": {
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "cosub3": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cosub31": {
+                "type": "string",
+              },
+              "cosub32": {
+                "type": "string",
+              },
+            },
+            "type": "object",
+          },
+          "type": "array",
+        },
+      },
+      "type": "object",
+    },
+    "dash-field": {
+      "type": "string",
+    },
+    "datetimefield": {
+      "type": "date-time",
+    },
+    "simpleobject": {
+      "additionalProperties": false,
+      "properties": {
+        "sosub1": {
+          "type": "string",
+        },
+        "sosub2": {
+          "type": "integer",
+        },
+      },
+      "type": "object",
+    },
+    "special-aou": {
+      "type": "string",
+    },
+    "stringarray": {
+      "items": {
+        "type": "string",
+      },
+      "type": "array",
+    },
+    "stringfield": {
+      "type": "string",
+    },
+  },
+  "type": "object",
+}
+`;
+
+exports[`Helpers - Convert > generateModel 1`] = `
+{
+  "mockModel": {
+    "fields": {
+      "bigintfield": {
+        "fieldType": "number",
+        "filter": true,
+        "graphqlTplType": "'Int'",
+        "graphqlType": "Int",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "bigintfield",
+        "nullable": true,
+      },
+      "booleanfield": {
+        "fieldType": "boolean",
+        "filter": true,
+        "graphqlTplType": "'Boolean'",
+        "graphqlType": "Boolean",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "booleanfield",
+        "nullable": true,
+      },
+      "complexobject": {
+        "fieldType": "mockModel_Complexobject",
+        "filter": false,
+        "graphqlTplType": "mockModel_Complexobject",
+        "graphqlType": "mockModel_Complexobject",
+        "interfaceName": "mockModel_ComplexobjectInterface",
+        "isArray": false,
+        "name": "complexobject",
+        "nullable": true,
+      },
+      "dash-field": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "dash-field",
+        "nullable": true,
+      },
+      "datetimefield": {
+        "fieldType": "Date",
+        "filter": true,
+        "graphqlTplType": "'DateTime'",
+        "graphqlType": "DateTime",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "datetimefield",
+        "nullable": true,
+      },
+      "simpleobject": {
+        "fieldType": "mockModel_Simpleobject",
+        "filter": false,
+        "graphqlTplType": "mockModel_Simpleobject",
+        "graphqlType": "mockModel_Simpleobject",
+        "interfaceName": "mockModel_SimpleobjectInterface",
+        "isArray": false,
+        "name": "simpleobject",
+        "nullable": true,
+      },
+      "special-aou": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "special-aou",
+        "nullable": true,
+      },
+      "stringarray": {
+        "fieldType": "string[]",
+        "filter": false,
+        "graphqlTplType": "['String']",
+        "graphqlType": "[String]",
+        "interfaceName": undefined,
+        "isArray": true,
+        "name": "stringarray",
+        "nullable": true,
+      },
+      "stringfield": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "stringfield",
+        "nullable": true,
+      },
+    },
+    "interfaceName": "mockModelInterface",
+    "modelName": "mockModel",
+    "root": true,
+  },
+  "mockModel_Complexobject": {
+    "fields": {
+      "cosub1": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "cosub1",
+        "nullable": true,
+      },
+      "cosub2": {
+        "fieldType": "string[]",
+        "filter": false,
+        "graphqlTplType": "['String']",
+        "graphqlType": "[String]",
+        "interfaceName": undefined,
+        "isArray": true,
+        "name": "cosub2",
+        "nullable": true,
+      },
+      "cosub3": {
+        "fieldType": "mockModel_Cosub3[]",
+        "filter": false,
+        "graphqlTplType": "[mockModel_Cosub3]",
+        "graphqlType": "[mockModel_Cosub3]",
+        "interfaceName": "mockModel_Cosub3Interface[]",
+        "isArray": true,
+        "name": "cosub3",
+        "nullable": true,
+      },
+    },
+    "interfaceName": "mockModel_ComplexobjectInterface",
+    "modelName": "mockModel_Complexobject",
+    "root": false,
+  },
+  "mockModel_Cosub3": {
+    "fields": {
+      "cosub31": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "cosub31",
+        "nullable": true,
+      },
+      "cosub32": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "cosub32",
+        "nullable": true,
+      },
+    },
+    "interfaceName": "mockModel_Cosub3Interface",
+    "modelName": "mockModel_Cosub3",
+    "root": false,
+  },
+  "mockModel_Simpleobject": {
+    "fields": {
+      "sosub1": {
+        "fieldType": "string",
+        "filter": true,
+        "graphqlTplType": "'String'",
+        "graphqlType": "String",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "sosub1",
+        "nullable": true,
+      },
+      "sosub2": {
+        "fieldType": "number",
+        "filter": true,
+        "graphqlTplType": "'Int'",
+        "graphqlType": "Int",
+        "interfaceName": undefined,
+        "isArray": false,
+        "name": "sosub2",
+        "nullable": true,
+      },
+    },
+    "interfaceName": "mockModel_SimpleobjectInterface",
+    "modelName": "mockModel_Simpleobject",
+    "root": false,
+  },
+}
+`;
+
+exports[`Helpers - Convert > parseFields 1`] = `
+{
+  "bigintfield": "bigint",
+  "booleanfield": "boolean",
+  "complexobject": {
+    "cosub1": "varchar",
+    "cosub2": [
+      "varchar",
+    ],
+    "cosub3": [
+      {
+        "cosub31": "varchar",
+        "cosub32": "varchar",
+      },
+    ],
+  },
+  "dash-field": "varchar",
+  "datetimefield": "timestamp(3)",
+  "simpleobject": {
+    "sosub1": "varchar",
+    "sosub2": "bigint",
+  },
+  "special-aou": "varchar",
+  "stringarray": [
+    "varchar",
+  ],
+  "stringfield": "varchar",
+}
+`;

@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Codegen - Generator > getSchemaTableColumns 1`] = `
+[
+  {
+    "description": "",
+    "name": "stringarray",
+    "type": "array(varchar)",
+  },
+  {
+    "description": "",
+    "name": "stringfield",
+    "type": "varchar",
+  },
+  {
+    "description": "",
+    "name": "booleanfield",
+    "type": "boolean",
+  },
+  {
+    "description": "",
+    "name": "datetimefield",
+    "type": "timestamp(3)",
+  },
+  {
+    "description": "",
+    "name": "bigintfield",
+    "type": "bigint",
+  },
+  {
+    "description": "",
+    "name": "simpleobject",
+    "type": "row(sosub1 varchar, sosub2 bigint)",
+  },
+  {
+    "description": "",
+    "name": "complexobject",
+    "type": "row(cosub1 varchar, cosub2 array(varchar), cosub3 array(row(cosub31 varchar, cosub32 varchar)))",
+  },
+  {
+    "description": "",
+    "name": "dash-field",
+    "type": "varchar",
+  },
+  {
+    "description": "",
+    "name": "special-aou",
+    "type": "varchar",
+  },
+]
+`;

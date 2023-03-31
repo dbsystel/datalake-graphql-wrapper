@@ -14,12 +14,6 @@
     },
     "typeRoots": ["./types", "./node_modules/@types"]
   },
-  "include": ["src/**/*", "types/*.d.ts", "types/*.ts"],
-  "exclude": [
-    "node_modules",
-    "test",
-    "dist",
-    "**/*spec.ts",
-    "src/codegen/templates/*.ejs"
-  ]
+  "include": ["src/**/*", "types/*.d.ts", "types/*.ts", "tests/**/*"],
+  "exclude": ["node_modules", "dist", "src/codegen/templates/*.ejs"]
 }

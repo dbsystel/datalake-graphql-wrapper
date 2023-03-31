@@ -112,7 +112,7 @@ export const generateModel = ({
   return models
 }
 
-const convertField = ({
+export const convertField = ({
   fieldName,
   fieldDefinition,
   parent,
